@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookRent</title>
+</head>
+<style>
+    body {
+        background-color: antiquewhite;
+        /* если надо поставить фото на фон */
+        /*background-image: url("my-background-image.jpg");*/
+        /*background-size: cover; !* растягивает изображение, чтобы заполнить весь экран *!*/
+        /*background-position: center; !* выравнивает изображение по центру страницы *!*/
+    }
+
+    .alignLabel {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .alignForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 300px;
+    }
+
+    .alignWin {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 400px;
+    }
+</style>
+<body>
+
+<div class="alignLabel">
+    <h1>Авторизация</h1>
+</div>
+
+<div class="alignForm">
+    <form id="login-form" method="POST">
+        <label for="username"> Логин:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Войти</button>
+    </form>
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
+

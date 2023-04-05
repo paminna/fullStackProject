@@ -1,0 +1,22 @@
+package com.example.myapp.dto;
+
+import com.example.myapp.entity.User;
+import lombok.Data;
+
+@Data
+public class BookDto {
+
+    private Integer id;
+
+    private String title;
+
+    private String author;
+
+    private String discription;
+
+    private Integer timeToRent;
+
+    private User user;
+
+    private String imageUrl;
+}

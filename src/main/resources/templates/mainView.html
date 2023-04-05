@@ -1,0 +1,275 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>BookRenta</title>-->
+<!--    <link rel="stylesheet" href="mainView.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#">Home</a></li>-->
+<!--            <li><a href="#">Books</a></li>-->
+<!--            <li><a href="#">About Us</a></li>-->
+<!--            <li><a href="#">Contact Us</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--    <div class="hero-image">-->
+<!--        <h1>Welcome to Our Book Rental Service</h1>-->
+<!--        <p>Discover and rent your favorite books online today</p>-->
+<!--        <button>Get Started</button>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<main>-->
+<!--    <section class="books-section">-->
+<!--        <h2>Featured Books</h2>-->
+<!--        <div class="books-container">-->
+<!--            &lt;!&ndash; Featured books content goes here &ndash;&gt;-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    <section class="about-section">-->
+<!--        <h2>About Us</h2>-->
+<!--        <p>We are a book rental service that aims to make reading accessible to everyone. We offer a wide variety of books, from classics to bestsellers, available for rent at affordable prices.</p>-->
+<!--    </section>-->
+
+<!--    <section class="contact-section">-->
+<!--        <h2>Contact Us</h2>-->
+<!--        <form>-->
+<!--            <label for="name">Name:</label>-->
+<!--            <input type="text" id="name" name="name" required>-->
+
+<!--            <label for="email">Email:</label>-->
+<!--            <input type="email" id="email" name="email" required>-->
+
+<!--            <label for="message">Message:</label>-->
+<!--            <textarea id="message" name="message" required></textarea>-->
+
+<!--            <button type="submit">Submit</button>-->
+<!--        </form>-->
+<!--    </section>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <p>Copyright © Book Rental Service-->
+<!--        <br>All rights reserved.</p>-->
+<!--</footer>-->
+
+<!--<script src="script.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Book Rental Service</title>-->
+<!--    <link rel="stylesheet" href="mainView.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#">Home</a></li>-->
+<!--            <li><a href="#">Books</a></li>-->
+<!--            <li><a href="#">About Us</a></li>-->
+<!--            <li><a href="#">Contact Us</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--    <div class="hero-image">-->
+<!--        <h1>Welcome to Our Book Rental Service</h1>-->
+<!--        <p>Discover and rent your favorite books online today</p>-->
+<!--        <button>Get Started</button>-->
+<!--    </div>-->
+<!--</header>-->
+<!--<aside class="sidebar">-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#">Login</a></li>-->
+<!--            <li><a href="#">Register</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--    <div class="search-box">-->
+<!--        <form>-->
+<!--            <input type="text" placeholder="Search Books...">-->
+<!--            <button type="submit">Search</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</aside>-->
+
+<!--<main>-->
+<!--    <section class="books-section">-->
+<!--        <h2>Featured Books</h2>-->
+<!--        <div class="books-container">-->
+<!--            &lt;!&ndash; Featured books content goes here &ndash;&gt;-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    <section class="about-section">-->
+<!--        <h2>About Us</h2>-->
+<!--        <p>We are a book rental service that aims to make reading accessible to everyone. We offer a wide variety of books, from classics to bestsellers, available for rent at affordable prices.</p>-->
+<!--    </section>-->
+
+<!--    <section class="contact-section">-->
+<!--        <h2>Contact Us</h2>-->
+<!--        <form>-->
+<!--            <label for="name">Name:</label>-->
+<!--            <input type="text" id="name" name="name" required>-->
+
+<!--            <label for="email">Email:</label>-->
+<!--            <input type="email" id="email" name="email" required>-->
+
+<!--            <label for="message">Message:</label>-->
+<!--            <textarea id="message" name="message" required></textarea>-->
+
+<!--            <button type="submit">Submit</button>-->
+<!--        </form>-->
+<!--    </section>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <p>Copyright © Book Rental Service-->
+<!--        <br>All rights reserved.</p>-->
+<!--</footer>-->
+
+<!--<script src="script.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookRenta</title>
+    <link rel="stylesheet" href="mainView.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="hero-image">
+        <h1>Welcome to Our Book Rental Service</h1>
+        <p>Discover and rent your favorite books online today</p>
+        <button>Get Started</button>
+    </div>
+    <div class="search-profile">
+        <form>
+            <input type="text" placeholder="Search Books...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <a href="#"><i class="fa fa-user"></i></a>
+    </div>
+</header>
+<main>
+    <section class="books-section">
+        <h2>Featured Books</h2>
+        <div id="book-list">
+            <!-- Books will be added dynamically here -->
+        </div>
+        <div class="pagination">
+            <!-- Pagination buttons will be added dynamically here -->
+        </div>
+
+        <!--        <div id="book-list">-->
+<!--            <ul id="books"></ul>-->
+<!--            <div class="pagination">-->
+<!--&lt;!&ndash;                <a href="#">&laquo;</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="#">1</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="#">2</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="#">3</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="#">4</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="#">5</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                <a href="#">&raquo;</a>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="book-category">-->
+<!--            <img src="book1.jpg" alt="Book 1">-->
+<!--            <h3>Category 1</h3>-->
+<!--            <div class="book-description">-->
+<!--                <p>Book description goes here.</p>-->
+<!--                <button>Book Now</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="book-category">-->
+<!--            <img src="book2.jpg" alt="Book 2">-->
+<!--            <h3>Category 2</h3>-->
+<!--            <div class="book-description">-->
+<!--                <p>Book description goes here.</p>-->
+<!--                <button>Book Now</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="book-category">-->
+<!--            <img src="book3.jpg" alt="Book 3">-->
+<!--            <h3>Category 3</h3>-->
+<!--            <div class="book-description">-->
+<!--                <p>Book description goes here.</p>-->
+<!--                <button>Book Now</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="book-category">-->
+<!--            <img src="book4.jpg" alt="Book 4">-->
+<!--            <h3>Category 4</h3>-->
+<!--            <div class="book-description">-->
+<!--                <p>Book description goes here.</p>-->
+<!--                <button>Book Now</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="book-category">-->
+<!--            <img src="book5.jpg" alt="Book 5">-->
+<!--            <h3>Category 5</h3>-->
+<!--            <div class="book-description">-->
+<!--                <p>Book description goes here.</p>-->
+<!--                <button>Book Now</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="pagination">-->
+<!--            <a href="#">&laquo;</a>-->
+<!--            <a href="#">1</a>-->
+<!--            <a href="#">2</a>-->
+<!--            <a href="#">3</a>-->
+<!--            <a href="#">4</a>-->
+<!--            <a href="#">5</a>-->
+<!--            <a href="#">&raquo;</a>-->
+<!--        </div>-->
+    </section>
+    <section class="about-section">
+        <h2>About Us</h2>
+            <p>We are a book rental service that aims to make reading accessible to everyone. We offer a wide variety of books, from classics to bestsellers, available for rent at affordable prices.</p>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Copyright © Book Rental Service
+        <br>All rights reserved.</p>
+</footer>
+<script src="mainView.js"></script>
+</body>
+</html>
