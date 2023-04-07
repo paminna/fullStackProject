@@ -6,13 +6,14 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 @RequestMapping
 public class LoginController {
 
     @Autowired
     private LoginService loginService;
 
-    @CrossOrigin(origins = "http://localhost:63342")
+//    @CrossOrigin(origins = "http://localhost:63342")
     @PostMapping("/login")
     public String login(@RequestParam String username, @RequestParam String password){
 

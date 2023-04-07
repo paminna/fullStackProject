@@ -1,0 +1,189 @@
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #a1887f;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: white;
+    color: tan;
+    border: 2px solid tan;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: tan;
+    color: white;
+}
+
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table th, table td {
+    border: 1px solid tan;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #a1887f;
+    color: white;
+}
+
+/* Стили для формы */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: tan;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid tan;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    background-color: tan;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: white;
+    color: tan;
+}
+
+
+
+
+/*формирование шапки*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+/*формирование верхней плашки */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/*тоже формирование верхней плашки и расположения надписей */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*расположение надписи на верхней плашке*/
+nav li {
+    float: left;
+}
+
+/*формирование надписи на верхней плашке*/
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* задний фон верхней плашки*/
+nav li a:hover {
+    background-color: #111;
+}
+
+/*фон заголовка сайта*/
+header {
+    background-color: #a1887f;
+    background-position: center;
+    text-align: center;
+}
+
+/*заголовок сайта*/
+.hero-image h1 {
+    font-size: 60px;
+    margin: 0;
+    color: white;
+}
+
+/*подзаголовок сайта*/
+.hero-image p {
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+}
+
+
+/*размер и положение поисковой строки*/
+.search-profile form {
+    display: flex;
+    flex-grow: 1;
+}
+
+/*задает сероватый цвет поисковой строке*/
+.search-profile input[type=text] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+/*выравнивание поисковой строки чтобы она не доставала до кнопки поиска*/
+.search-profile button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/*задает цвет кнопке поиска*/
+.search-profile form button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a1887f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.account-section{
+    text-align: center;
+}

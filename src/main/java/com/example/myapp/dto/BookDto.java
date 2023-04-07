@@ -12,7 +12,7 @@ public class BookDto {
 
     private String author;
 
-    private String discription;
+    private String description;
 
     private Integer timeToRent;
 

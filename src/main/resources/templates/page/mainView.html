@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookRent</title>
+    <link rel="stylesheet" href="../style/mainView.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <section id="home">
+    </section>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#books-section">Books</a></li>
+            <li><a href="#about-section">About Us</a></li>
+            <li><a href="#contact-section">Contact Us</a></li>
+            <li class="login"><a href="login.html">Log in</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+        </ul>
+    </nav>
+    <div class="hero-image">
+        <h1>Welcome to Our Book Rental Service</h1>
+        <p>Discover and rent your favorite books online today</p>
+    </div>
+    <div class="search-profile">
+        <form>
+            <input type="text" placeholder="Search Books...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <a href="profile.html"><i class="fa fa-user"></i></a>
+    </div>
+</header>
+<main>
+    <section class="books-section">
+        <section id="books-section">
+        <h1>Featured Books</h1>
+        <div id="book-list">
+            <!-- Books will be added dynamically here -->
+        </div>
+        <div class="pagination">
+            <!-- Pagination buttons will be added dynamically here -->
+        </div>
+        </section>
+    </section>
+    <section class="about-section">
+        <section id="about-section">
+        <h2>About Us</h2>
+            <p>We are a book rental service that aims to make reading accessible to everyone. We offer a wide variety of books, from classics to bestsellers, available for rent at affordable prices.</p>
+        </section>
+    </section>
+
+    <section class="contact-section">
+        <section id="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+    </section>
+</main>
+<div class="footer">
+<footer>
+    <p>Copyright © Book Rental Service
+        <br>All rights reserved.</p>
+</footer>
+</div>
+<script src="../service/mainView.js"></script>
+</body>
+</html>

@@ -1,24 +1,29 @@
-
+/*формирование шапки*/
 body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: antiquewhite;
 }
 
+/*формирование верхней плашки */
 nav {
     background-color: #333;
     overflow: hidden;
 }
 
+/*тоже формирование верхней плашки и расположения надписей */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+/*расположение надписи на верхней плашке*/
 nav li {
     float: left;
 }
 
+/*формирование надписи на верхней плашке*/
 nav li a {
     display: block;
     color: white;
@@ -27,45 +32,33 @@ nav li a {
     text-decoration: none;
 }
 
+/* задний фон верхней плашки*/
 nav li a:hover {
     background-color: #111;
 }
 
-
+/*фон заголовка сайта*/
 header {
     background-color: #a1887f;
     background-position: center;
     text-align: center;
 }
 
+/*заголовок сайта*/
 .hero-image h1 {
     font-size: 60px;
     margin: 0;
     color: white;
 }
 
+/*подзаголовок сайта*/
 .hero-image p {
     font-size: 24px;
     margin-top: 20px;
     color: white;
 }
 
-.hero-image button {
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero-image button:hover {
-    background-color: #3e8e41;
-}
-
+/*задаем положение и форму поисковика*/
 .search-profile {
     display: flex;
     align-items: center;
@@ -74,11 +67,13 @@ header {
     background-color: #ddd;
 }
 
+/*размер и положение поисковой строки*/
 .search-profile form {
     display: flex;
     flex-grow: 1;
 }
 
+/*задает сероватый цвет поисковой строке*/
 .search-profile input[type=text] {
     padding: 10px;
     width: 100%;
@@ -88,6 +83,7 @@ header {
     background-color: #f1f1f1;
 }
 
+/*выравнивание поисковой строки чтобы она не доставала до кнопки поиска*/
 .search-profile button[type=submit] {
     background-color: #4CAF50;
     color: white;
@@ -99,57 +95,18 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.search-profile button[type=submit]:hover {
-    background-color: #3e8e41;
-}
+/*удалить скорее всего*/
+/*.search-profile button[type=submit]:hover {*/
+/*    background-color: #3e8e41;*/
+/*}*/
 
+/*иконка профиля*/
 .search-profile a {
     font-size: 24px;
     color: black;
     margin-left: 10px;
 }
-
-.books-section {
-    padding: 50px;
-}
-
-.books-section h2 {
-    text-align: center;
-}
-
-.book-category {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.book-category img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.book-category h3 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.book-description {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.book-description p {
-    font-size: 16px;
-}
-
-.book-description button {
-    background-color: #4CAF50;
-    color: white;
-}
-
+/*задает цвет кнопке поиска*/
 .search-profile form button[type="submit"] {
     padding: 10px 15px;
     border: none;
@@ -160,60 +117,55 @@ header {
     cursor: pointer;
 }
 
+/*ставит надпись главную  в центр*/
+.books-section h1 {
+    text-align: center;
+}
 
-
-
-
+/*расположение списка книг на странице*/
 #book-list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 -5px;
+    background-color: antiquewhite;
+    flex-direction: row;
 }
 
+/*расположение элементов книг на странице*/
 .book-item {
-    width: calc(50% - 10px);
-    margin: 0 5px 20px;
+    width: calc(50% - 500px);
+    margin: 0 250px 30px;
 }
 
-.book-title {
-    margin: 0 0 10px;
-}
-
-.book-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Стиль для заголовка книги */
-.book-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 5px;
-}
-
-/* Стиль для автора книги */
 .book-author {
-    font-size: 14px;
-    margin: 0;
-    margin-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
 }
 
-/* Стиль для описания книги */
+.book-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+ /*Стиль для описания книги*/
 .book-description {
     font-size: 14px;
     margin: 0;
     margin-bottom: 5px;
+    text-align: center;
 }
 
+
+/*выравнивает пагинацию по центру*/
 .pagination {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
+/*скрывает кнопку вокруг цифр страницы*/
 .pagination button {
     background: none;
     border: none;
@@ -229,30 +181,21 @@ header {
 
 
 .about-section {
-    background-color: #fff;
+    background-color: peachpuff;
     padding: 50px;
     color: #444;
 }
 
+/*сдвигает от краев форму обратной связи*/
 .contact-section {
-    background-color: #fff;
+    background-color: #a1887f;
     padding: 50px;
     color: #444;
 }
 
+/*выстраивает иконки формы обратной связи */
 label {
     display: block;
     margin-bottom: 10px;
     color: #444;
 }
-
-input[type="text"], input[type="email"], textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-

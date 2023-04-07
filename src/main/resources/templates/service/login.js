@@ -1,7 +1,9 @@
 const form = document.querySelector('#login-form');
+
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const data = new FormData(form);
+    localStorage.setItem(data.get("username"), data.get("passwprd"));
     fetch('http://localhost:8080/login', {
         method: 'POST',
         body: data
@@ -20,3 +22,4 @@ function handleResponse(response) {
         window.location.href = fileName
     });
 }
+
