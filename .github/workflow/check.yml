@@ -1,0 +1,16 @@
+name: Check
+#when to start
+on: push
+jobs:
+#  name of job
+  lint:
+#    where
+    runs-on: ubuntu-latest
+      steps:
+        - name: checkout
+        uses: actions/checkout@v3
+        - name: install dependencies
+        run: npm ci
+        - name: lint
+        run: npm run lint
+
