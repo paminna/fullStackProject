@@ -1,17 +1,30 @@
-name: Check
-#when to start
-on: push
+name: Java CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-#  name of job
-  lint:
-#    where
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: install dependencies
-        run: npm install --package-lock-only
-      - name: install dep 2
-        run: npm ci
-      - name: lint
-        run: npm run lint
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+
+      - name: Run tests
+        run: mvn test
