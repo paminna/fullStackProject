@@ -28,11 +28,13 @@ jobs:
 
   run_test:
     runs-on: ubuntu-latest
+    steps:
       - name: Run tests
         run: mvn test
 
   deploy:
     runs-on: ubuntu-latest
+    steps:
       - name: Build Docker image
         run: |
           docker build -t ghcr.io/${{ github.repository }}/java-app:latest .
