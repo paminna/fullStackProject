@@ -28,3 +28,16 @@ jobs:
 
       - name: Run tests
         run: mvn test
+
+      - name: Build Docker image
+        run: |
+          docker build -t ghcr.io/${{ github.repository }}/java-app:latest .
+
+      - name: Push Docker image to GitHub Container Registry
+        run: |
+          docker push ghcr.io/${{ github.repository }}/java-app:latest
+
+      - name: Output success message
+        run: |
+          echo "Docker image successfully built and pushed to GitHub Container Registry!"
+          echo "Find it here: https://github.com/orgs/${{ github.repository_owner }}/packages/container/java-app"
