@@ -26,9 +26,13 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
+  run_test:
+    runs-on: ubuntu-latest
       - name: Run tests
         run: mvn test
 
+  deploy:
+    runs-on: ubuntu-latest
       - name: Build Docker image
         run: |
           docker build -t ghcr.io/${{ github.repository }}/java-app:latest .
